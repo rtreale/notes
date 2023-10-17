@@ -1,0 +1,444 @@
+div {
+    /*------------------------------------------------- FONTE -------------------------------------------------*/
+    /* FAMILIA DA FONTE */
+    font-family: Verdana;
+    font-family: Arial;
+    font-family: cursive;
+    /* TAMANHO DA FONTE */
+    font-size: 48px;
+    font-size: larger;
+    /* ESTILO DA FONTE */
+    font-style: normal;
+    font-style: italic; /* Italico */
+    /* ESPESSURA DA FONTE */
+    font-weight: normal;  /* Normal */
+    font-weight: bold;    /* Negrito */
+    font-weight: 500;     /* Espessura por valor numerico */
+    /*------------------------------------------------- FONTE -------------------------------------------------*/
+
+    /*-------------------------------------------------- COR ---------------------------------------------------*/
+    /* Propriedade responsável por definir a cor da fonte */
+    color: red;             /* cor do texto modo nominal */
+    color: rgb(255, 0, 0);  /* cor do texto modo rgb */
+    color: #FF0000;         /* cor do texto modo hexadecimal */
+    /* Propriedade responsável por definir a cor do plano de fundo da fonte */
+    background-color: red;              /* back-ground modo nominal */
+    background-color: rgb(255, 0, 0);   /* back-ground modo rgb */
+    background-color: #FF0000;          /* back-ground modo hexadecimal */
+    /*-------------------------------------------------- COR ---------------------------------------------------*/
+
+    /* ÁREA QUE O ELEMENTO OCUPARÁ */
+    width: 100px;      /* LARGURA */
+    height: 100px;     /* ALTURA */
+    
+    /* ALTURA DA LINHA */
+    line-height: 48px;
+
+    /* Propriedade responsável por colocar linhas em um texto */
+    text-decoration: none;           /* Nenhuma Linha */
+    text-decoration: underline;      /* Linha abaixo do texto */
+    text-decoration: overline;       /* Linha acima do texto */
+    text-decoration: line-through;   /* Linha no meio do texto */
+
+
+    /* Propriedade responsável por definir o alinhamento de um texto */
+    text-align: left;   /* Texto à Esquerda */
+    text-align: center; /* Texto ao Centro */
+    text-align: right;  /* Texto à Direita */
+    text-align: justify;
+    text-align: justify-all;
+    text-align: start;
+    text-align: end;
+    text-align: match-parent;
+    
+    /*-------------------------------------------- MARGEM DA TELA ----------------------------------------------*/
+    /* MAIS USADOS */
+    margin: 60px;                 /* top, right, bottom, left */
+    margin: 70px 20px 10px 60px;  /* top, right, bottom, left */
+    margin: 10px 15px;            /* Top + Bot && Left + Right */
+    margin: 10px auto;            /* Margem laterais do mesmo tamanho (divide a tela na metade) */
+
+    margin-top: 0px;
+    margin-right: 15px;
+    margin-bottom: 0;
+    margin-left: 15px;
+    /*-------------------------------------------- MARGEM DA TELA -----------------------------------------------*/
+
+    /*----------------------------------------- BORDAS EM ELEMENTOS ---------------------------------------------*/
+    /* MAIS USADOS */
+    border: 2px dashed #454545;   /* largura da borda, estilo, cor */
+    border: solid 5px #FF0000;    /* a ordem dos valores nao afeta o codigo, porém acima está o mais indicado */
+    
+    /* obs: border não é valido sem o parametro "estilo" = "solid ou dashed" */
+
+    border-top: 5px solid red;                  /* borda do topo - largura da borda, estilo, cor */
+    border-right: 10px solid rebeccapurple;     /* borda da direita - largura da borda, estilo, cor */
+    border-bottom: 5px solid red;               /* borda em baixo - largura da borda, estilo, cor */
+    border-left: 10px solid rebeccapurple;      /* borda da esquerda - largura da borda, estilo, cor */
+
+    /*-------------------- PARAMETROS DE BORDER ----------------------*/
+    /* LARGURA DA BORDA */
+    border-width: 2px;              /* largura da borda */
+    
+    /* ESTILOS DE BORDA */
+    border-style: solid;            /* estilo = solido */
+    border-style: dashed;           /* estilo = tracejada */
+    border-style: dotted;           /* estilo = pontilhada */
+    
+    /* CORES DAS BORDA */
+    border-color: red;            /* cor = nominal */ 
+    border-color: #454545;        /* cor = hexadecimal */
+    /*-------------------- PARAMETROS DA BORDA ----------------------*/
+ 
+    /* ARREDONDAMENTO DE BORDAS */
+    border-radius: 35px;                /* Arredonda todos os cantos */
+    border-radius: 80px;                /* Circulo - basta ter valores altos */
+    border-radius: 80px 30px 70px 50px; /* Canto superior esq., "" direito, canto inferior dir., "" esq. */
+    border-radius: 25px 10px;           /* Canto superior esq. e inferior dir. && Canto superior dir. e inferior esq. */
+    /*----------------------------------------- BORDAS EM ELEMENTOS ---------------------------------------------*/
+
+    /*---------------------------------------------- PADDING ----------------------------------------------------*/
+    /* Propriedade de espaçamento interno */
+    /* MAIS USADOS */
+    padding: 20px;                   /* top, right, bottom, left */
+    padding: 30px 40px 30px 40px;    /* top, right, bottom, left */
+    padding: 15px 20px;              /* top + bot && right + left */
+    
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    /*---------------------------------------------- PADDING ----------------------------------------------------*/
+
+}
+
+/* ----------------------------------------- SELETORES DE TAG  --------------------------------------------------*/
+/* AGRUPAMENTO DE SELETORES - CSS - */
+span, li {
+
+}
+/* COMBINANDO SELETORES DE TAG*/
+div p {      /*Somente os paragrafos (p) dentro da div serão estilizados */
+
+}
+/* ----------------------------------------- SELETORES DE TAG  --------------------------------------------------*/
+
+/* --------------------------------- SELETORES DE CLASSE (.text {}) ----------------------------------------------*/
+/* Para usar o seletor no codigo .html = <'tag' class=".texto-destaque_vermelho"></'tag'>*/
+.texto-destaque_vermelho {
+    color: red;
+}
+
+.texto-negrito {
+    font-weight: bold;
+}
+
+/* AGRUPANDO SELETORES DE CLASSE */
+.texto1, .texto2 {
+
+}
+
+/* COMBINANDO SELETORES DE CLASSE*/
+.texto1 .texto2 {
+
+}
+
+/*COMBINANDO SELETORES DE CLASSE E TAGS*/
+.texto1 span {
+
+}
+
+/*COMBINANDO SELETORES DE TAGS E CLASSE*/
+p .texto1 {
+
+}
+
+/* ID E TAG OU ID E SELETORES DE CLASSE */
+#contato ul, #contato ul li {
+    display: inline;
+}
+
+/* OBS: Ao agrupar com virgula (.texto1, .texto2) estamos colocando o mesmo estilo para
+diferentes tags ou classes.
+        Ao combinar com espaço (.texto1 p) estamos dizendo que todos os paragrafos (p)
+dentro da classe (.texto1) terão aquele estilo */
+
+/* --------------------------------- SELETORES DE CLASSE (.text {}) ----------------------------------------------*/
+
+/* ------------------------------ PROPRIEDADES DO BACKGROUND ---------------------------------*/
+div {
+    /* ------------------------------ BACKGROUND-IMAGE -------------------------------------*/
+    /* Propriedade responsável por definir a cor do plano de fundo da fonte */
+    background-image: url('img-fundo.jpg');     /* Imagem salva na mesma pasta que o arquivo CSS */
+    background-image: url('img/img-fundo.jpg'); /* Imagem salva dentro da pasta img na mesma pasta do arquivo CSS*/
+        
+    background: url('../img/img-fundo.jpg');     /* imagem salva dentro da pasta img fora da pasta do arquivo CSS (2 pontos volta uma pasta na hierarquia de pastas)*/
+    background: url('../../img/img-fundo.jpg');  /* voltando 2 pastas e acessando outras pastas */
+    
+    background-image: url('https://www.devmedia.com.br/arquivos/cursos/css_background/embed/aula3/img-fundo.jpg'); /* exibir uma imagem de um outro site*/
+    /* ------------------------------ BACKGROUND-IMAGE -------------------------------------*/
+
+    /* ------------------------------ BACKGROUND-REPEAT -----------------------------------*/
+    background-repeat: no-repeat;   /* Impede que a imagem se replique */
+    background-repeat: repeat-y;    /* Repete a imagem verticalmente */
+    background-repeat: repeat-x;    /* Repete a imagem horizontalmente */.
+    /* ------------------------------ BACKGROUND-REPEAT -----------------------------------*/
+
+    /* ------------------------------ BACKGROUND-POSITION ---------------------------------*/
+    background-position: center;        /* Centraliza a imagem de fundo */
+    background-position: top;           /* Posiciona a imagem de fundo na parte superior */
+    background-position: right;         /* Posiciona a imagem de fundo à direita */
+    background-position: bottom;        /* Posiciona a imagem de fundo na parte inferior */
+    background-position: left;          /* Posiciona a imagem de fundo à esquerda */
+
+
+    background-position: right top;
+    background-position: right center;
+    background-position: right bottom;
+    background-position: center top;
+    background-position: center center;
+    background-position: center bottom;
+    background-position: left top;
+    background-position: left center;
+    background-position: left bottom;
+    /* ------------------------------ BACKGROUND-POSITION ---------------------------------*/
+    
+    /* ------------------------------ BACKGROUND-SIZE -------------------------------------*/
+    background-size: cover;         /* Ocupa todo espaço do elemento e exibe parte da imagem se for necessário */
+    background-size: contain;       /* Estica a imagem ao máximo possível exibindo a imagem por completo, sem perder a proporção */
+    background-size: 50% 70%;       /* Define à - largura, altura - do elemento */
+    background-size: 300px 150px;   /* Define à - largura, altura - do elemento */
+    /* ------------------------------ BACKGROUND-SIZE -------------------------------------*/
+
+    /* ------------------------------ BACKGROUND-ATTACHMENT -------------------------------------*/
+    background-attachment: fixed;   /* Deixa a imagem estática */ /*OBS: OLHAR EFEITO PARALAXE*/
+    /* ------------------------------ BACKGROUND-ATTACHMENT -------------------------------------*/
+}
+
+/* ------------------ ESCRITA REDUZIDA PARA AS PROPRIEDADES DE BACKGROUND -------------------*/
+/* EXEMPLO 01*/  
+body {
+    background-color: #0f0;
+    background-image: url('img/img.jpg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-attachment: fixed;
+}
+
+/* FORMA REDUZIDA - EXEMPLO 01*/
+body {
+    background: #0f0 url('img/img.jpg') no-repeat top right fixed; /* A ordem dos parametros não importa */
+}
+/* ------------------ ESCRITA REDUZIDA PARA AS PROPRIEDADES DE BACKGROUND -------------------*/
+
+
+
+/* ------------------------------ PROPRIEDADES DO BACKGROUND ---------------------------------*/
+
+/* ------------------------------ PORCENTAGEM - SINTAXE --------------------------------------*/
+/* A porcentagem pode sert utilizada em qualquer propriedade que receba valores em pixel, ex: */
+img {
+    width: 90%;
+    height: 70%;
+    margin: 0 0 0 5%;
+    padding: 5% 0%;
+    ;
+}
+
+/* Valores relativos - vw & vh */
+img { 
+    width: 90vh;     /* 1vw = 1% largura */
+    height: 80vh;    /* 1vh = 1% altura */
+}
+
+/* Valores relativos - calc */
+img {                               /* com o calc podemos fazer cálculos utilizando valores relativos (%, vw e vh) */
+    width: calc(100vw - 60px);      
+    margin: 30px;
+}
+/* ------------------------------ PORCENTAGEM - SINTAXE --------------------------------------*/
+
+/* ------------------------------ LARGURA MINIMA E MÁXIMA --------------------------------------*/
+img {                   /*Sempre que a propriedade min-width ou max.. forem definidas elas irão se sobrepor ao tamanho definido no width*/
+    min-width: 1200px;                         /* largura minima */
+    max-width: 100vw;                          /* largura máxima */
+                        /*Sempre que a propriedade min-height ou max.. forem definidas elas irão se sobrepor ao tamanho definido no height*/
+    min-height: 50%;                          /* altura minima */
+    max-height: calc(100vh - 10px);           /* altura máxima */
+}
+/* ------------------------------ LARGURA MINIMA E MÁXIMA --------------------------------------*/
+
+/* ------------------------------ OVERFLOW -----------------------------------------------------*/
+/* Cria uma barra de rolagem no elemento para garantir que o conteudo interno nao ultrapasse o tamanho definido no CSS */
+.area {
+    overflow: scroll;  /* exibe barra de rolagem - mesmo que o tamanho nao seja ultrapassado  */
+    overflow: auto;    /* so exibe barra de rolagem - só se o conteúdo ultrapassar o tamanho determinado */
+    
+    overflow-x: scroll; /* barra de rolagem horizontal */
+    overflow-y: scroll; /* barra de rolagem vertical */
+
+    /* Simplificando- overflow-x & overflow-y */
+    overflow: auto scroll; 
+}
+/* ------------------------------ OVERFLOW -----------------------------------------------------*/
+
+/* ------------------------------ DISPLAY --------------------------------------------------------*/
+img {
+    display: flexbox; /* Deixa as imagens lado à lado */
+    display: flex;    /* Deixa as imagens lado à lado */
+
+    display: inline;  /* Transforma elementos block em elementos inline e vice-versa (ex: div em span)*/
+    display: block;   /* Transforma elementos inline em elementos block (ex: span em div)*/ 
+    display: none;    /* Desaparece com o elemento block */
+}
+/* ------------------------------ DISPLAY --------------------------------------------------------*/
+
+/* ------------------------------ VISIBILITY -----------------------------------------------------*/
+div {
+    visibility: visible;    /* Elemento visivel - este é o valor padrão de todo elemento */
+    visibility: hidden;     /* Elemento invisivel - mas o block continua na pagina */
+}
+/* ------------------------------ VISIBILITY -----------------------------------------------------*/
+
+/* ------------------------------ OPACITY -----------------------------------------------------*/
+div {
+    opacity: 100%;   /* Opaco */
+    opacity: 50%;    /* Semi-Transparente */
+    opacity: 0%;     /* Invisível */
+}
+/* ------------------------------ OPACITY -----------------------------------------------------*/
+
+/* ------------------------------ BOX-SIZING -----------------------------------------------------*/
+/* Box-sizing é uma propriedade do CSS que altera a forma como o tamanho de um elemento é calculado 
+por padrão o tamanhao de um elemento leva em conta = altura, largura, padding, border*/
+
+
+/* ------------------------------ BOX-SIZING -----------------------------------------------------*/
+/* O uso de box-sizing pode ser visto como uma maneira simples de garantir que os tamanhos definidos no width/height sejam respeitados. */
+div {
+    width: 250px;
+    padding: 30px;
+    box-sizing: border-box;  /* calcula a largura de um elemento = largura + padding*/
+    box-sizing: content-box; /* Valor padrão de todo elemento */
+}
+/* ------------------------------ BOX-SIZING -----------------------------------------------------*/
+
+/* ------------------------------ BOX-SHADOW -----------------------------------------------------*/
+/* Permite adicionar uma sombra em volta de elementos */
+div {
+    box-shadow: 20px 20px;                  /* sombra em elemento = deslocamento x, deslocamento y*/
+    box-shadow: -20px 0px;
+
+    /* 3º Parametro - opcional = desfoque */
+    box-shadow: 20px 20px 10px;             /* desfocando a sombra = deslocamento x, deslocamento y, desfoque */
+
+    /* 4º Parametro - opcional = expandir em todas as direções */
+    box-shadow: 0 0 0 30px;                /* expandindo a sombra = deslocamento x, deslocamento y, desfoque, expandir */
+
+    /* 5º Parametro - opcional = cor */
+    box-shadow: 20px 20px 0 0 blue;     /* cor da sombra = deslocamento x, deslocamento y, desfoque, expandir, cor */
+    box-shadow: 20px 20px 0 0 #ff0000;
+    box-shadow: 20px 20px 0 0 rgb(255, 0, 0);
+
+    /* 6º Parametro - opcional = (inset) sombra interna no elemento 
+    obs: não funciona com elementos de imagem (img) */
+    box-shadow: 0 0px 30px 20px #000000a3 inset; /* inset (sombra interna) = deslocamento x, deslocamento y, desfoque, expandir, cor, sombra interna */
+}
+/* ------------------------------ BOX-SHADOW -----------------------------------------------------*/
+
+/* ------------------------------ POSITION -----------------------------------------------------*/
+
+.div_fixa {
+    position: fixed;      /* Fixando elementos na tela, impedindo que o scroll os esconda */    
+    position: absolute;   /* "Movendo elementos na tela, não impedindo o scroll" - não respeita os limites, as bordas sao o limite */
+    position: relative;   /* "" - respeita os limites da div (pai) mesmo se incluirmos mais elementos na página */
+
+    /* Movendo elementos - usadas em conjunto à propriedade position */
+    top: 0px;           /* move o elemento na vertical, de cima para baixo */
+    right: 35px;        /* move o elemento na horizontal, da direita para esquerda */
+    bottom: 20px;       /* move o elemento na vertical, de baixo para cima */
+    left: 0px;          /* move o elemento na horizontal, da esquerda para direita */
+                        /*Obs: Na prática, top e bottom nao sao utilizadas juntas, assim como, left e right */
+}
+/* ------------------------------ POSITION -----------------------------------------------------*/
+
+/* Para que a página não apresente um estilo padrão aplicado pelo navegador, você pode definir um estilo global para resetar esse estilo padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*--------------------------------- PSEUDO-CLASSES (ESTADO E ESTRUTURAIS) E PSEUDO-ELEMENTOS ----------------------------------------------*/
+/*----- PSEUDO-CLASSE DE ESTADO (1 sinal de dois pontos) -----*/
+img:hover button:hover { /* hover =  muda quando mouse esta em cima do seletor na pagina*/
+    background-color: #2b077a;
+    color: white;
+} 
+
+a:visited { /* visited = muda a cor do link quando já acessado */
+    color: green;
+}
+/*----------------------------------------------------------*/
+
+/*----- PSEUDO-CLASSE DE ESTRUTURA (1 sinal de dois pontos) -----*/
+p:last-of-type { /* last-of-type = estiliza apenas o ultimo parágrafo de todos os elementos pai (div, article...) */
+
+}
+
+.primeira-area p:last-of-type { /* combinando seletor de classe com pseudo-classe. Para estilizar somente 1 area, basta chamar
+    o seletor de classe no html (<div class="primeira-area">) */
+    color: red;
+}
+
+p:first-of-type { /* first-of-type = estiliza o primeiro paragrafo de todos os elementos pai (div, article...) */
+    color: red;
+}
+
+p:nth-of-type(2) { /* nth-of-type =  estiliza o elemento definido no seletor na posição indicada */
+    background-color: #eb6565;
+}
+
+p:nth-of-type(odd) { /* o parâmetro odd = estiliza todos os elementos ímpares */
+    background-color: #eb6565;
+}
+
+p:nth-of-type(even) { /* o parâmetro even = estiliza todos os elementos pares */
+    background-color: #60c4ff;
+}
+
+p:first-child { /* estiliza o primeiro filho de um elemento pai. Obs: se o primeiro elemento nao for p, nao ira estilizar */
+
+}
+
+p:last-child { /* semelhante a sintaxe anterior, so que para o caso do elemento ser o ultimo filho de um elemento pai */
+
+}
+
+p:nth-child(2) { /* define o estilo de um elemento caso ele esteja na posição definida no parâmetro */
+    /* podem ser usados os parametros = odd, even */
+}
+/*----------------------------------------------------------*/
+
+/*----- PSEUDO-ELEMENTOS (2 sinais de dois pontos) -----*/
+article::first-letter { /* first-letter = estiliza a primeira letra de um texto */
+
+}
+
+article::first-line { /* estiliza a primeira linha do seletor de classe */
+
+}
+
+a::before { /* adiciona um conteudo antes do elemento definido no seletor */
+    content: ""; /* propriedade obrigatória */
+    width: 20px;
+    height: 20px;
+    background-image: url("img/link.png");    
+    margin: 0 6px 0 0;
+}
+
+a::after { /* adiciona um conteudo após o elemento definido no seletor */
+    content: ""; /* propriedade obrigatória */
+}
+/*----------------------------------------------------------*/
+/* --------------------------------- PSEUDO-CLASSES (ESTADO E ESTRUTURAL) E PSEUDO-ELEMENTOS ----------------------------------------------*/

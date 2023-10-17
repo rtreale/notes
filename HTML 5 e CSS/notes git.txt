@@ -1,0 +1,15 @@
+/* --------------- GIT BASH -------------- */
+
+git init                  /* inicia repositorio */
+
+git add "file-name"       /* adiciona arquivos */
+
+git status                /* ve lista com arquivos q serao commitados*/
+
+git reset                 	/* apaga arquivos adicionados*/
+
+git commit -m "nome do commit"  /* */
+
+git remote add origin https://github.com/rtreale/DevMedia.git /* coloca o link com o repositorio*/
+
+git push -u origin master
